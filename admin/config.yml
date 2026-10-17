@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: vlad-pixelsvg/LCSPiemonte # Sostituisci con il tuo username/nome-repo esatto se diverso
   branch: main # O il nome del tuo branch principale (es. master)
 
