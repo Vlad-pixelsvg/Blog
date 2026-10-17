@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: vlad-pixelsvg/LCSPiemonte # Sostituisci con il tuo username/nome-repo esatto se diverso
+  branch: main # O il nome del tuo branch principale (es. master)
+
+# Abilita l'autenticazione tramite Netlify Identity (comoda anche per GitHub Pages)
+media_folder: "assets/img" # Cartella dove caricherai le immagini dei post
+public_folder: "/assets/img"
+
+collections:
+  - name: "blog"
+    label: "Giornalino / Blog"
+    folder: "_posts" # Cartella dove verranno salvati i file Markdown degli articoli
+    create: true
+    fields:
+      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "Data di pubblicazione", name: "date", widget: "datetime"}
+      - {label: "Copertina", name: "image", widget: "image", required: false}
+      - {label: "Corpo del post", name: "body", widget: "markdown"}
